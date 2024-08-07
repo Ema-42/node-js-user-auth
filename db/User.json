@@ -1,0 +1,81 @@
+[
+  {
+    "_id": "2c1da925-cab7-43b3-bdee-d1b64856f959",
+    "username": "admin",
+    "password": "$2b$10$eUxEBAT4rG/CAhLJW8FWyO1yJpdQM3LKB/yKyjlBO9uOJAivO1uOK",
+    "age": 24,
+    "created_at": "2/8/2024, 14:33:02"
+  },
+  {
+    "_id": "4956e6f8-c3a9-43ba-bcaf-cab191a7e047",
+    "username": "sole21wq1221",
+    "password": "$2b$10$d17XBunyb7qDKH.8PtHDPurYe9jQlfAd6Qx6zlm7FtNoMiTJaXOia",
+    "age": 24,
+    "created_at": "2/8/2024, 14:16:33"
+  },
+  {
+    "_id": "6971c63b-0481-4e5c-8098-50347fc00ca8",
+    "username": "sole21wq121",
+    "password": "$2b$10$4q4xkcU33aszQ71IxwPUcOTzIpDQQyrsecYs18aM1suOGm.q7W0XO",
+    "age": 24,
+    "created_at": "2/8/2024, 14:16:28"
+  },
+  {
+    "_id": "83456cbb-b776-44e2-a92a-387e67a82cbc",
+    "username": "sole21wq1",
+    "password": "$2b$10$HOwcOdDZ63ASDuv7imuJ9eFOsnIuGJ7wyNt/F4cseU97OQVc/x1XK",
+    "age": 24,
+    "created_at": "2/8/2024, 14:16:24"
+  },
+  {
+    "_id": "505614b7-b781-4ba4-856f-98b369aafdb0",
+    "username": "sole211",
+    "password": "$2b$10$LwUZTZufhfBWRrCmPNs3G.LwNwS6C2hOevafTjEB5KdchcjeVG1wy",
+    "age": 24,
+    "created_at": "2/8/2024, 14:16:10"
+  },
+  {
+    "_id": "b0a95969-4518-4467-a623-9e700907b6a2",
+    "username": "sole2",
+    "password": "$2b$10$APIl86M2PpLEDEptgFOEFOZBoVdTUCqYf8XylVlNs1txS7USwzq52",
+    "age": 24,
+    "created_at": "2/8/2024, 14:16:04"
+  },
+  {
+    "_id": "b485315a-bfaa-4997-83ca-0fc775232524",
+    "username": "sole",
+    "password": "$2b$10$PHCISTvcXuWmA48lrSxlyO0z/96gbBT5gqLDOgwWY0wk//eeSJBCS",
+    "age": 24,
+    "created_at": "2/8/2024, 14:13:54"
+  },
+  {
+    "_id": "e85c9423-14ba-4648-911e-62976bfad8a6",
+    "username": "dsa",
+    "password": "$2b$10$k3dXOwNKHYa53q7tQj28b.nMCvhvfbLHMuAEAXmOP2qsvEql8aSaS",
+    "age": 24
+  },
+  {
+    "_id": "b3d65ac9-3340-4e39-821c-d4f536c65199",
+    "username": "judi11",
+    "password": "$2b$10$i3tDkiJCXjyNEwq5pnGA0.CM.i.sepdYY8p6TLGG8EeYkIJszuZKy",
+    "age": 24
+  },
+  {
+    "_id": "939b17c7-d279-4391-8536-d7b34007046c",
+    "username": "judi",
+    "password": "$2b$10$Rl49YD55OqbeL5wkqjh.GOJ5NqR.DJxiod7FA/a8/f3NJaFIPatde",
+    "age": 24
+  },
+  {
+    "_id": "5b901943-33dc-4c76-9da2-6f0fbb6e2629",
+    "username": "emanuelw",
+    "password": "23131pass",
+    "age": 24
+  },
+  {
+    "_id": "2945fc06-6c85-433c-bc9b-102d27c144ae",
+    "username": "emanuel",
+    "password": "23131pass",
+    "age": 24
+  }
+]
