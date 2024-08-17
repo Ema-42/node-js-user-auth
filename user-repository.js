@@ -2,8 +2,13 @@ import dbLocal from "db-local";
 import crypto from "node:crypto";
 import bcrypt from "bcrypt";
 
-import { SALT_ROUNDS } from "./config.js";
-import { type } from "node:os";
+import dotenv from "dotenv";
+
+// Configura dotenv al inicio del archivo
+dotenv.config();
+
+//import { SALT_ROUNDS } from "./config.js";
+ 
 
 const { Schema } = new dbLocal({ path: "./db" });
 const User = Schema("User", {
@@ -25,7 +30,7 @@ export class UserRepository {
     if (user) throw new Error("el usuario ya existe");
 
     const id = crypto.randomUUID();
-    const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
+    const hashedPassword = await bcrypt.hash(password,  process.env.SALT_ROUNDS);
     const fecha_registro = new Date().toLocaleString();
     //guardando
     User.create({

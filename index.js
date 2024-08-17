@@ -1,9 +1,13 @@
 import express from "express";
-import { PORT, SECRET_JWT_KEY } from "./config.js";
-import { UserRepository } from "./user-repository.js";
-import cookieParser from "cookie-parser";
-
 import jwt from "jsonwebtoken";
+import cookieParser from "cookie-parser";
+import { UserRepository } from "./user-repository.js";
+import dotenv from "dotenv";
+
+// Cargar variables de entorno desde .env
+dotenv.config();
+
+const { PORT, SECRET_JWT_KEY } = process.env;
 
 const app = express();
 app.set("view engine", "ejs");
@@ -55,7 +59,10 @@ app.post("/register", async (req, res) => {
     res.status(400).send(error.message);
   }
 });
-app.post("/logout", (req, res) => {});
+
+app.post("/logout", (req, res) => {
+  // Implementar logout si es necesario
+});
 
 app.get("/protected", (req, res) => {
   const token = req.cookies.access_token;
@@ -71,5 +78,5 @@ app.get("/protected", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`corriendo en el puerto ${PORT}`);
+  console.log(`Corriendo en el puerto ${PORT}`);
 });
