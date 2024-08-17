@@ -1,5 +1,12 @@
 [
   {
+    "_id": "9e828289-a780-4117-a8aa-d96a8b104ef6",
+    "username": "miprueba12aa",
+    "password": "$2b$11$snRiIpCLHotvvBxSWf0nweT2OyeirGzK6C6WH/MPy03hPBxucHpf.",
+    "age": 24,
+    "created_at": "17/8/2024, 14:49:41"
+  },
+  {
     "_id": "1703bbe3-6349-4723-8e40-6850fea9728b",
     "username": "deaaedaeda",
     "password": "$2b$10$70ogPX0ieTGQJAm7dRmZcup08uj6Gj7w0XynAlThNTW4pKiammsCe",
