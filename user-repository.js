@@ -7,8 +7,7 @@ import dotenv from "dotenv";
 // Configura dotenv al inicio del archivo
 dotenv.config();
 
- 
- 
+const SALT_ROUNDS = parseInt(process.env.SALT_ROUNDS, 10); // Convertir a entero
 
 const { Schema } = new dbLocal({ path: "./db" });
 const User = Schema("User", {
@@ -30,11 +29,7 @@ export class UserRepository {
     if (user) throw new Error("el usuario ya existe");
 
     const id = crypto.randomUUID();
-    // Convertir el valor de SALT_ROUNDS a número entero
-    const saltRounds = parseInt(process.env.SALT_ROUNDS, 10);
-    if (isNaN(saltRounds)) throw new Error("SALT_ROUNDS debe ser un número entero");
-
-    const hashedPassword = await bcrypt.hash(password, saltRounds);;
+    const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
     const fecha_registro = new Date().toLocaleString();
     //guardando
     User.create({
