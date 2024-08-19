@@ -26,7 +26,7 @@
 
           <label for="login-password">Password</label>
           <input type="password" id="login-password" name="password" required />
-
+          <p>Prueba user: admin  con pass: admin123</p>
           <button type="submit">Login</button>
           <span>&nbsp;</span>
         </form>
@@ -99,7 +99,7 @@
               loginSpan.innerText = "Sesion iniciada... Entrando...";
               loginSpan.style.color = "green";
               setTimeout(() => {
-                window.location.href = "/protected";
+                window.location.href = "/home";
               }, 2000);
             } else {
               loginSpan.innerText = "El usuario o contraseña no coincide";

@@ -1,0 +1,75 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="shortcut icon" href="<%= photoUrl %>" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Bienvenido, <%= username %>!</h1>
+      </nav>
+    </header>
+
+    <main>
+      <section class="user-info">
+        <div class="profile">
+          <img src="<%= photoUrl %>" alt="<%= username %>'s profile picture" />
+          <ul>
+            <li><strong>Email:</strong> <%=email%></li>
+            <li><strong>Edad:</strong> <%=age%></li>
+            <li>
+              <strong>Fecha de creación de la cuenta:</strong> <%=created_at%>
+            </li>
+            <!-- Añade más información según sea necesario -->
+          </ul>
+        </div>
+      </section>
+      <section class="user-info">
+        Aquí ira una tabla con todos los demas usuarios
+        <table class="tabla-usuarios">
+          <tr class="primera-fila-tabla-usuarios">
+            <td>Usuario</td>
+            <td>Edad</td>
+            <td>Email</td>
+            <td>Fecha</td>
+          </tr>
+          <tr>
+            <td>Jack Russell</td>
+            <td>21</td>
+            <td>nose</td>
+            <td>nose</td>
+          </tr>
+
+      
+        </table>
+      </section>
+    </main>
+
+    <a class="btn-logout" id="close-session" href="/logout">Cerrar sesion</a>
+
+    <footer>
+      <p>&copy; 2024 My App. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<script>
+  const $ = (el) => document.querySelector(el);
+  const logout = $("#close-session");
+  logout?.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    fetch("/logout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => {
+      window.location.href = "/";
+    });
+  });
+</script>

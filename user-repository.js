@@ -31,6 +31,8 @@ export class UserRepository {
     const id = crypto.randomUUID();
     const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
     const fecha_registro = new Date().toLocaleString();
+    const photoUrl =  "/images/profile.jpg";
+    const email = "emanuel@example.com"
     //guardando
     User.create({
       _id: id,
@@ -38,6 +40,8 @@ export class UserRepository {
       password: hashedPassword,
       age,
       created_at: fecha_registro,
+      photoUrl,
+      email
     }).save();
 
     return id;
@@ -53,6 +57,7 @@ export class UserRepository {
     //no mostrar password
     const { password: _, ...publicUser } = user;
     return publicUser;
+    
   }
 }
 

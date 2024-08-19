@@ -1,0 +1,142 @@
+/* Reset de estilos y configuración básica */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #0A2540;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Estilos del contenedor principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  background-color: #0A2540;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.btn-logout {
+  color: #1D4ED8;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #dcdcdc;
+  padding: 4px 10px;
+  border-radius: 5px;
+  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+ 
+}
+ 
+
+/* Sección de información del usuario */
+.user-info {
+  background-color: #233B53;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #1D4ED8;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+ 
+}
+
+.profile ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.profile ul li {
+  margin-bottom: 1rem;
+}
+
+.profile ul li strong {
+  color: #1D4ED8;
+}
+
+.tabla-usuarios{
+    margin-top: 1rem;
+    background-color: #0A2540;
+    width: 100%;
+}
+.primera-fila-tabla-usuarios{
+    background-color: #051526;
+    font-weight: bold;
+     
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #545a60;
+ 
+   
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .user-info {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .user-info {
+    width: 45%;
+  }
+}
